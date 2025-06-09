@@ -210,7 +210,6 @@ nav button {
 .movie-list ul {
     display: flex;
     flex-direction: row;
-    gap: 17px;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -221,20 +220,23 @@ nav button {
     min-width: 215px;
 }
 
-.movie-list ul li {
-    min-width: 196px;
+.movie-list ul>div>li {
+    width: 196px;
     height: 276px;
     background-size: cover;
     background-position: center;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
     flex: 0 0 auto;
-    transition: transform 0.3s ease;
-    border-radius: inherit;
+}
+
+.movie-list ul>div {
+    transition: transform 0.2s ease;
 }
 
 .movie-list ul>div:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .text2 {
@@ -319,6 +321,12 @@ nav button {
     align-items: center;
     padding: 0px 20px;
     min-height: 90px;
+    transition: background-color 300ms ease;
+}
+
+.questions-container:hover {
+    cursor: pointer;
+    background-color: rgb(48, 47, 47);
 }
 
 .questions {
@@ -388,6 +396,10 @@ footer>section>div>input {
     gap: 25px;
 }
 
+.harsh div>span>span:hover {
+    cursor: pointer;
+}
+
 .grid-container3 {
     position: relative;
     top: 15pxpx;
@@ -396,6 +408,10 @@ footer>section>div>input {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 80vw;
 
+}
+
+.box>p:hover {
+    cursor: pointer;
 }
 
 .box {
